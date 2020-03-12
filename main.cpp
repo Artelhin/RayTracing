@@ -11,6 +11,12 @@ const uint32_t RED   = 0x000000FF;
 const uint32_t GREEN = 0x0000FF00;
 const uint32_t BLUE  = 0x00FF0000;
 
+const std::string outFlag = "-out";
+const std::string sceneFlag = "-scene";
+
+const int sizeX = 512;
+const int sizeY = 512;
+
 int main(int argc, const char** argv)
 {
   std::unordered_map<std::string, std::string> cmdLineParams;
@@ -32,12 +38,12 @@ int main(int argc, const char** argv)
   }
 
   std::string outFilePath = "zout.bmp";
-  if(cmdLineParams.find("-out") != cmdLineParams.end())
-    outFilePath = cmdLineParams["-out"];
+  if(cmdLineParams.find(outFlag) != cmdLineParams.end())
+    outFilePath = cmdLineParams[outFlag];
 
   int sceneId = 0;
-  if(cmdLineParams.find("-scene") != cmdLineParams.end())
-    sceneId = atoi(cmdLineParams["-scene"].c_str());
+  if(cmdLineParams.find(sceneFlag) != cmdLineParams.end())
+    sceneId = atoi(cmdLineParams[sceneFlag].c_str());
 
   uint32_t color = 0;
   if(sceneId == 1)
@@ -47,11 +53,11 @@ int main(int argc, const char** argv)
   else if(sceneId == 3)
     color = BLUE;
   
-  std::vector<uint32_t> image(512*512); 
+  std::vector<uint32_t> image(sizeX*sizeY);
   for(auto& pixel : image)
     pixel = color;
 
-  SaveBMP(outFilePath.c_str(), image.data(), 512, 512);
+  SaveBMP(outFilePath.c_str(), image.data(), sizeX, sizeY);
 
   std::cout << "end." << std::endl;
   return 0;
