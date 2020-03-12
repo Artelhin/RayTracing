@@ -108,10 +108,8 @@ make −j 4
 
 ***Полезные ссылки***
 
-<p>[1]Scratchapixel 2.0. An Overview of the Ray-Tracing Rendering Technique. https://www.
-scratchapixel.com/lessons/3d-basic-rendering/ray-tracing-overview/light-transport-ray-tracing-whitted</p>
-<p>[2] http://mathinfo.univ-reims.fr/IMG/pdf/Using_the_modified_Phong_reflectance_model_
-for_Physically_based_rendering_-_Lafortune.pdf</p>
+<p>[1]Scratchapixel 2.0. An Overview of the Ray-Tracing Rendering Technique. https://www.scratchapixel.com/lessons/3d-basic-rendering/ray-tracing-overview/light-transport-ray-tracing-whitted</p>
+<p>[2] http://mathinfo.univ-reims.fr/IMG/pdf/Using_the_modified_Phong_reflectance_model_for_Physically_based_rendering_-_Lafortune.pdf</p>
 <p>[3] Игнатенко А. В., Фролов В. А. Основы синтеза фотореалистичных изображений. Электронная публикация книги. http://ray-tracing.ru/upload/free/ImageSyntBook.pdf</p>
 <p>[4] Matt Pharr, Wenzel Jakob, and Greg Humphreys. 2016. Physically Based Rendering: From
 Theory to Implementation (3-rd Ed.). Morgan Kaufmann Publishers Inc., San Francisco, CA,
