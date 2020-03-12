@@ -8,5 +8,5 @@ set (CMAKE_CXX_STANDARD 11)
 
 add_executable(rt main.cpp Bitmap.cpp)
 
-target_link_libraries(rt ${ALL_LIBS} )
+#target_link_libraries(rt ${ALL_LIBS} )
 
