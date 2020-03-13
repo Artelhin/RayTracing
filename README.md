@@ -1,4 +1,4 @@
-# ray_tracing
+# RayTracing
 CMC MSU 2020 Machine Graphics Cource Task 1
 
 <h1>Задание 1: Трассировка лучей Whitted-а</h1>
